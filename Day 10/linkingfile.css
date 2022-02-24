@@ -1,0 +1,10 @@
+h1{
+    color: black;
+    background-color: white;
+    border: 5px solid red;
+    font-family: initial;
+    align-items: center;
+}
+p{
+    color: blue;
+}
