@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        h3{
+            color: black;
+        }
+        p{
+            color: black;
+        }
+        h1{
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(224, 129, 3);
+        }
+        .s{
+          align-items: flex-end;
+          float: right;
+          /* width:fit-content; */
+          padding: 10px;
+          justify-content: center; 
+        }
+        .card{
+            padding: 10px;
+            margin: 20px 20px;
+            border: 1px solid rgb(245, 195, 130);
+        }
+        .parent{
+            border: 20px solid rgb(245, 195, 130);
+            display: flex;
+            justify-content: center; 
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Amazon</h1>
+   <div>
+    <div class="s">
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+Login
+</button>
+
+<!-- Register Modal Modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+Register
+</button>
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Join </h5>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+    <form>
+        <h2>Register Here</h2>
+        <!-- <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+          </div> -->
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Name </label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+          </div>
+          
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Mobile Number </label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+          </div>
+        
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+</div>
+<!-- <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <button type="button" class="btn btn-primary">Save changes</button>
+</div> -->
+</div>
+</div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Sign in</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+    <form>
+        <h2>Login Here</h2>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">save</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <button type="button" class="btn btn-primary">Save changes</button>
+</div>
+</div>
+</div>
+</div>
+
+    </div>
+    <div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Amazon Shopping</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://www.amazon.in/ref=nav_logo" target="_blank">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mobiles   
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://www.amazon.in/s?k=flagship+phones&i=electronics&rh=n%3A1805560031%2Cp_72%3A1318476031%2Cp_n_feature_eight_browse-bin%3A14267636031%2Cp_n_feature_seven_browse-bin%3A16757455031%2Cp_n_feature_nine_browse-bin%3A8561127031%2Cp_36%3A5000000-10000000&dc&qid=1647063530&rnid=1318502031&sprefix=flagshi%2Caps%2C401&ref=sr_nr_p_36_1" target="_blank">Flagship Mobiles</a></li>
+                <li><a class="dropdown-item" href="https://www.amazon.in/s?k=midrange+phones&i=electronics&rh=n%3A1805560031%2Cp_n_feature_eight_browse-bin%3A8561112031%2Cp_36%3A1500000-4000000&dc&crid=3GE15KH47K58O&qid=1647063656&rnid=1318502031&sprefix=midrange+phones%2Caps%2C303&ref=sr_nr_p_36_2" target="_blank">Mid-Range Mobiles</a></li>
+                <li><a class="dropdown-item" href="https://www.amazon.in/s?k=budget+phones&rh=n%3A976419031%2Cp_36%3A1318505031&dc&crid=11C27J2N7M3B1&qid=1647063413&rnid=1318502031&sprefix=Budget+phones%2Caps%2C313&ref=sr_nr_p_36_3" target="_blank">Budget Mobiles</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Laptops   
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://www.amazon.in/s?k=hp+laptop&i=computers&sprefix=HP%2Ccomputers%2C356&ref=nb_sb_ss_ts-doa-p_1_2" target="_blank">HP</a></li>
+                <li><a class="dropdown-item" href="https://www.amazon.in/s?k=lenovo+laptops&i=computers&crid=CKGMAKT5QMVH&sprefix=lenovo+laptops+%2Ccomputers%2C312&ref=nb_sb_noss" target="_blank">Lenova</a></li>
+                <li><a class="dropdown-item" href="https://www.amazon.in/s?k=dell+laptop&i=computers&crid=1QG08YBZ028CW&sprefix=dell+laptop%2Ccomputers%2C305&ref=nb_sb_noss" target="_blank">Dell</a></li>
+                <li><a class="dropdown-item" href="https://www.amazon.in/s?k=Asus+laptops&i=computers&crid=3RU860USRN59R&sprefix=asuslaptops%2Ccomputers%2C302&ref=nb_sb_noss" target="_blank">Asus</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                TV   
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://www.amazon.in/s?k=lg+tv&crid=3E99CKIGCZPMH&sprefix=lg+tv%2Caps%2C317&ref=nb_sb_noss" target="_blank">LG</a></li>
+                <li><a class="dropdown-item" href="https://www.amazon.in/s?k=samsung+tv&crid=2YXL1J0DKR97X&sprefix=samsung+tv%2Caps%2C302&ref=nb_sb_noss" target="_blank">Samsung</a></li>
+                <li><a class="dropdown-item" href="https://www.amazon.in/s?k=mi+tv&crid=32PFOJTAQU5U1&sprefix=mi+tv%2Caps%2C306&ref=nb_sb_noss" target="_blank">MI</a></li>
+                <li><a class="dropdown-item" href="https://www.amazon.in/s?k=sony+tv&crid=298Y5Q9AN1J9Y&sprefix=sony+tv%2Caps%2C303&ref=nb_sb_noss" target="_blank">Sony</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.samsung.com/in/smartphones/galaxy-s22/images/galaxy-s22_highlights_kv_img.jpg" width="800px" height="400px" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Galaxy S22/S22+</h3>
+            <p>The phone that makes everyday epic</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.samsung.com/is/image/samsung/assets/in/Galaxy_Book2_Series_banner_1440x6401.jpg?imwidth=1366" width="800px" height="400px" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Galaxy Book2 Series</h3>
+            <p>Light. Powerful. Made to move in style</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.samsung.com/is/image/samsung/assets/in/pf/8425_Smart-TV_PFP-Banner_1440x334_Without-text.jpg?imwidth=1366" width="800px" height="400px" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Redmi Smart TV</h3>
+            <p>The XL Speedy Experience</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+    <div>
+      <h1 style="color: black; background-color: rgb(245, 195, 130);">Flagship Mobiles <span class="badge bg-secondary">New</span></h1>
+    </div>
+    <div class="parent">
+      <div class="card" style="width: 18rem;">
+          <img src="https://m.media-amazon.com/images/I/61U6oC65TTL._AC_SX569_.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Samsung S22 Ultra</h5>
+            <p class="card-text">Samsung Galaxy S22 Ultra Smartphone, 128GB, 8K Camera & Video, S Pen, Fast 4nm Processor, US Version, Phantom Black</p>
+          </div>
+          <div class="card-body">
+            <a href="https://www.amazon.in/Samsung-Phantom-Storage-Additional-Exchange/dp/B09SH994JW/ref=sr_1_3?keywords=s22+ultra&qid=1646892566&sprefix=s22%2Caps%2C226&sr=8-3" class="card-link" target="_blank">Buy Now</a>
+            <a href="https://www.amazon.in/Samsung-Phantom-Storage-Additional-Exchange/dp/B09SH994JW/ref=sr_1_3?keywords=s22+ultra&qid=1646892566&sprefix=s22%2Caps%2C226&sr=8-3" class="card-link" target="_blank">Add to card</a>
+          </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+          <img src="https://m.media-amazon.com/images/I/61LvUvbZGlL._SX679_.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">OnePlus 9 Pro </h5>
+            <p class="card-text">OnePlus 9 Pro 5G (Morning Mist, 12GB RAM, 256GB Storage)</p>
+          </div>
+          <div class="card-body">
+            <a href="https://www.amazon.in/Test-Exclusive_2020_1167-Multi-3GB-Storage/dp/B089MV3MVY/ref=sr_1_3?keywords=oneplus+9+pro&qid=1646895098&sprefix=oneplus+9+p%2Caps%2C215&sr=8-3" class="card-link" target="_blank">Buy Now</a>
+            <a href="https://www.amazon.in/Test-Exclusive_2020_1167-Multi-3GB-Storage/dp/B089MV3MVY/ref=sr_1_3?keywords=oneplus+9+pro&qid=1646895098&sprefix=oneplus+9+p%2Caps%2C215&sr=8-3" class="card-link" target="_blank">Add to card</a>
+          </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+          <img src="https://m.media-amazon.com/images/I/5117scoUCBL._SY879_.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Iqoo 9</h5>
+            <p class="card-text">QOO 9 5G (Legend, 8GB RAM, 128GB Storage) | Qualcomm Snapdragon 888+ | 120W FlashCharge</p>
+          </div>
+          <div class="card-body">
+            <a href="https://www.amazon.in/iQOO-Qualcomm-Snapdragon-FlashCharge-Exchange/dp/B07WGPKWC8/ref=sr_1_4?keywords=iqoo%2B9&qid=1646895136&sprefix=iqoo%2B%2Caps%2C216&sr=8-4&th=1" class="card-link" target="_blank">Buy Now</a>
+            <a href="https://www.amazon.in/iQOO-Qualcomm-Snapdragon-FlashCharge-Exchange/dp/B07WGPKWC8/ref=sr_1_4?keywords=iqoo%2B9&qid=1646895136&sprefix=iqoo%2B%2Caps%2C216&sr=8-4&th=1" class="card-link" target="_blank">Add to card</a>
+          </div>
+      </div> 
+      <div class="card" style="width: 18rem;">
+          <img src="https://images-eu.ssl-images-amazon.com/images/I/41k-y7A3syL._SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mi 11T Pro</h5>
+            <p class="card-text">iaomi 11T Pro 5G Hyperphone(Celestial Magic,8GB RAM,256GB Storage)|SD 888 5G|120 Hz True 10-bit AMOLED|120W HyperCharge</p>
+          </div>
+          <div class="card-body">
+            <a href="https://www.amazon.in/Xiaomi-5G-Hyperphone-HyperCharge-Replacement-Additional/dp/B09Q18BKN9/ref=sr_1_10_sspa?keywords=mi+12+pro+max&qid=1646895543&sprefix=mi+12%2Caps%2C245&sr=8-10-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExMzYyREM2RDEwTUdGJmVuY3J5cHRlZElkPUEwODM2OTkzMzgyMldaR1ZTTlpMWSZlbmNyeXB0ZWRBZElkPUEwMDc1Mzg5OVVMWUlJWkhKQ0Q0JndpZGdldE5hbWU9c3BfbXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==" class="card-link" target="_blank">Buy Now</a>
+            <a href="https://www.amazon.in/Xiaomi-5G-Hyperphone-HyperCharge-Replacement-Additional/dp/B09Q18BKN9/ref=sr_1_10_sspa?keywords=mi+12+pro+max&qid=1646895543&sprefix=mi+12%2Caps%2C245&sr=8-10-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExMzYyREM2RDEwTUdGJmVuY3J5cHRlZElkPUEwODM2OTkzMzgyMldaR1ZTTlpMWSZlbmNyeXB0ZWRBZElkPUEwMDc1Mzg5OVVMWUlJWkhKQ0Q0JndpZGdldE5hbWU9c3BfbXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==" class="card-link" target="_blank">Add to card</a>
+          </div>
+      </div>
+  </div> 
+   </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
